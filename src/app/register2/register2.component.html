@@ -1,0 +1,51 @@
+<html>
+
+<body class="bg">
+  <div class="logo">
+    <img src="/assets/marvel_logo.png">
+  </div>
+
+  <div class="formLogin">
+
+    <form [formGroup]="paymentData">
+
+      <mat-form-field>
+        <h2 class="login">Register</h2><br>
+        <h3 class="data">Payment Data</h3>
+
+          <div class="inputs">
+
+
+            <input matInput placeholder="Card Number" mask="0000 0000 0000 0000" formControlName="cardNumber" id="cardNumber" cardNumber="ngControl">
+
+            <div class="dadosCartao">
+
+              <input id="validity" matIpnut placeholder="Validity" mask="00/00" formControlName="validity" id="validity" validity="ngControl">
+              <input id="cvv" matIpnut placeholder="CVV" mask="000" formControlName="cvv" id="cvv" cvv="ngControl">
+
+            </div>
+
+            <input matIpnut placeholder="Cardholder Name" formControlName="cardholderName" id="cardholderName" cardholderName="ngControl">
+
+            <input matIpnut placeholder="CPF of the Holder" mask="000.000.000-00" formControlName="cpf" id="cpf" cpf="ngControl">
+
+
+
+          </div>
+
+      </mat-form-field>
+
+
+    </form>
+
+  </div>
+
+  <button class="btEnter" type="submit" [disabled]="!paymentData.valid" (click)="onSubmit()">Continue</button>
+
+  <h2 class="registrar" >Login ></h2>
+
+</body>
+<main>
+  <!-- <img src="/assets/marvel_fundo.png"> -->
+</main>
+</html>

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap');
+
+html, body{
+  height: 100vh;
+  background-color: #E5E5E5;
+}
+
+header{
+  height: 120px;
+  background-color: #272827;
+  box-shadow: 2px 2px 5px 5px rgba(142, 142, 142);
+}
+
+#profile, #logout{
+  display: inline-flex;
+  margin-left: 450px;
+  margin-top: 50px;
+
+}
+
+#logout{
+  margin-left: 50px;
+}
+
+
+#logo{
+  position: absolute;
+  max-width: 120px;
+  margin-left: 700px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+
+h1{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 16px;
+  margin-top: 40px;
+  margin-left: 480px;
+}
+
+h2{
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+h3{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+}
+
+h3#personal{
+  font-size: 22px;
+}
+
+#payment{
+  position: absolute;
+  margin-top: 80px;
+  margin-left: 150px;
+}
+
+h4{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+}
+
+h5{
+  font-family: 'Inter', sans-serif;
+  font-weight: 200;
+}
+
+h6{
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 18px;
+
+}
+
+#contact{
+  padding-left: 80px;
+}
+
+.emailContact h5{
+  display: inline;
+}
+
+.emailContact{
+  margin-left: 0px;
+}
+
+
+.personalData{
+  position: absolute;
+  margin-left: 450px;
+  width: 970px;
+  text-align: center;
+}
+
+
+
+.cartaoCredito{
+  position: absolute;
+  background-color: #272827;
+  height: 190px;
+  width: 360px;
+  border-radius: 20px;
+  margin-left: 300px;
+}
+
+.cartaoCredito h6{
+  margin-top: 80px;
+
+}
+
+h6#cardNumber{
+  margin-left: -160px;
+}
+
+#cardNumber{
+  margin-top: 80px;
+}
+
+.nomeValidade h6{
+  display: inline;
+  margin-left: 1px;
+  justify-content: space-between;
+}
+
+#validade{
+  margin-left: 120px;
+}
+
+

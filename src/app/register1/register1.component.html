@@ -1,0 +1,71 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><html>
+
+<html>
+
+<body class="bg">
+  <div class="logo">
+    <img src="/assets/marvel_logo.png">
+  </div>
+
+  <div class="formLogin">
+
+    <form [formGroup]="accountData">
+
+      <mat-form-field>
+        <h2 class="login">Register</h2><br><br>
+        <h3 class="data">Account Data</h3>
+
+          <div class="inputs">
+
+
+            <input minlength="4" maxlength="15" matIpnut placeholder="Nickname" formControlName="nickname" id="nickname" nickname="ngControl">
+
+            <!-- <div *ngIf="userForm.get('nickname')?.invalid && userForm.get('nickname')?.dirty ||
+            userForm.get('nickname')?.touched">Required</div> -->
+
+
+            <input matIpnut placeholder="First Name" formControlName="firstName" id="firstName" firstName="ngControl">
+
+            <input matIpnut placeholder="Last Name" formControlName="lastName" id="lastName" lastName="ngControl">
+
+            <input matIpnut placeholder="E-Mail" formControlName="email" id="email" email="ngControl">
+
+            <input matIpnut placeholder="Contact" formControlName="contact" id="contact" contact="ngControl" mask="(00) 00000-0000"/>
+
+            <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'" formControlName="password" id="password" password="ngControl" required>
+
+            <span class="material-icons" matSuffix (click) ="hide = !hide">
+              {{hide ? 'visibility':'visibility_off'}}
+             </span>
+
+          </div>
+
+
+
+      </mat-form-field>
+
+
+      <!-- <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon> -->
+
+      <!-- <mat-hint *ngIf="!passwordInput.value">Password</mat-hint> -->
+
+
+
+    </form>
+
+  </div>
+
+  <!-- <button class="btEnter" [disabled]="userForm.invalid" (click)="onSubmit()" >Continue</button> -->
+
+  <button class="btEnter" type="submit" [disabled]="!accountData.valid" (click)="onSubmit()">Continue</button>
+
+
+  <h2 class="registrar" >Login ></h2>
+
+</body>
+<main>
+  <!-- <img src="/assets/marvel_fundo.png"> -->
+</main>
+</html>
+
+<!-- [disabled]="signup.invalid" -->

@@ -1,0 +1,59 @@
+<html>
+
+<body class="bg">
+  <div class="logo">
+    <img src="/assets/marvel_logo.png">
+  </div>
+
+
+<form #f="ngForm">
+  <!-- <form #f="ngForm" (submit)="onSubmit()"> -->
+
+  <div class="Form-group" >
+
+    <h2 class="login">Register</h2><br>
+    <h3 class="data">Address Data</h3>
+
+
+      <div class="listaFormulario">
+        <br><br>
+
+          <input matInput type="text" class="Form-control" id="cep" name="cep" ngModel #cep="ngModel" mask="00000-000" placeholder="CEP"
+          (blur)="consultaCep(cep.value , f)">
+
+          <div class="endereco">
+
+            <input matIpnut type="text" class="Form-control" id="logradouro" name="logradouro" ngModel #logradouro="ngModel"
+             placeholder="Address">
+
+            <input type="text" class="Form-control" id="numeroEnd" name="numeroEnd" ngModel #numeroEnd="ngModel" placeholder="No.">
+
+          </div>
+
+          <input type="text" class="Form-control" id="complemento" name="complemento" ngModel #complemento="ngModel" placeholder="Complement">
+
+          <div class="dist-city">
+
+            <input type="text" class="Form-control" id="uf" name="uf" ngModel #uf="ngModel" placeholder="District" disabled>
+
+            <input type="text" class="Form-control" id="localidade" name="localidade" ngModel #localidade="ngModel" placeholder="City" disabled>
+
+          </div>
+
+      </div>
+
+
+  </div>
+
+</form>
+
+<button class="btEnter" (click)="enviarDados()">Finish</button>
+
+
+<h2 class="registrar" type="submit" >Login ></h2>
+
+</body>
+<main>
+
+</main>
+</html>

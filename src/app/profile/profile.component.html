@@ -1,0 +1,47 @@
+<html>
+<body>
+
+  <header>
+
+      <h2 id="profile" (click)="irProfile()">Profile</h2>
+      <h2 id="logout">Logout</h2>
+
+      <img id="logo" src="/assets/marvel_logo.png" (click)="irHqs()">
+
+  </header>
+<h1>< Back to Comic Books</h1>
+
+<div class="personalData">
+
+  <h3 id="personal">Personal Data</h3><Br>
+  <h4><b>Nickname:</b> {{nickname}}</h4>
+
+  <h5><b>Name:</b> {{firstName}} {{lastName}}</h5>
+
+  <div class="emailContact">
+
+    <h5><b>Email:</b> {{email}}</h5>
+    <h5 id="contact"><b>Contact:</b> {{contact}}</h5>
+
+  </div>
+
+
+  <h5 id="address"><b>Address:</b> {{address}}, {{numberEnd}}, {{complement}}, {{district}}, {{city}} {{cep}}</h5>
+
+
+  <h3 id="payment">Form of Payment:</h3>
+
+    <div class="cartaoCredito">
+
+    <h6 class="cardNumber">*** **** **** {{cardNumber}}</h6>
+
+      <div class="nomeValidade">
+        <h6 id="nome">{{firstName}} {{lastName}}</h6>
+        <h6 id="validade">{{validity}}</h6>
+
+      </div>
+
+    </div>
+
+
+</div>

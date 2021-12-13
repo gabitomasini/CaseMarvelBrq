@@ -1,0 +1,71 @@
+<html>
+<body>
+
+  <header>
+
+      <h2 id="profile" (click)="irProfile()">Profile</h2>
+      <h2 id="logout" (click)="irHome()">Logout</h2>
+
+      <img id="logo" src="/assets/marvel_logo.png" (click)="irHqs()">
+
+  </header>
+
+
+  <div class="hqInformation">
+    <h1 (click)="irHqs()">< Back to Comic Books</h1>
+
+      <div class="detailsHq">
+        <img id="thumbnail" src="/assets/marvel_logo.png">
+
+        <div class="infosHq">
+
+          <!-- titulo do hq vai aqui -->
+          <h3 id="titulo">Star Wars: The High Republic (2021) #9</h3>
+
+          <div class="line1">
+
+            <!-- published vai aqui -->
+            <h4 id="published"><b>Published:</b> September 01, 2021</h4>
+
+            <!-- writer vai aqui -->
+            <h4 id="writer"><b>Writer:</b> Cavan Scott</h4>
+          </div>
+
+          <div class="line2">
+
+            <!-- penciler vai aqui -->
+            <h4 id="penciler"><b>Penciler:</b> Ario Anindito</h4>
+
+            <!-- cover artist vai aqui -->
+            <h4 id="coverArtist"><b>Cover artist:</b> Phil Noto</h4>
+          </div>
+
+          <!-- description vai aqui -->
+          <p>Description<br><br>
+            A NEW STORY BEGINS THIS ISSUE – THE SHADOW OF THE NIHIL! Following the terrible events of The Rising Storm, the villainous NIHIL are in retreat, hunted by THE JEDI. WAYSEEKER KNIGHT ORLA JARENI is attacked by a lone Nihil Stormship in deep space, a Stormship commanded by one of the Jedi’s own. Which of STARLIGHT BEACON’S number have joined the Nihil Horde? And how far will they turn from the Light?<br><br>
+
+          Cast: Jedi, Orla Jareni, Starlight Beacon, Avar Kriss</p>
+
+
+
+        </div>
+
+      </div>
+
+  </div>
+
+  <div class="compraHq">
+    <div class="compraHqInfos">
+      <h1>Acquire the Comic</h1>
+      <h4>Read online or on your iPhone, iPad or Android Device</h4>
+
+      <!-- aqui vai o preço do hq -->
+      <h3>$3.99</h3>
+    </div>
+
+    <!-- <button id="botaoComprar" >Buy Digital Issue</button> -->
+    <button class="btn btn-success" (click)="openSnackBar('Successful purchase!', 'x')">Buy Digital Issue</button>
+
+
+  </div>
+

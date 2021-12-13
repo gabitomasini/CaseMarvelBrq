@@ -1,0 +1,40 @@
+<html>
+<body>
+
+  <header>
+
+      <h2 id="profile" (click)="irProfile()">Profile</h2>
+      <h2 id="logout" (click)="irHome()">Logout</h2>
+
+      <img id="logo" src="/assets/marvel_logo.png">
+
+  </header>
+
+  <div class="conteudo"> <!-- conteudo inteiro abaixo do header -->
+
+    <h1>Comic Books</h1>
+
+    <div class="hqs" *ngFor="let quadrinhos of quadrinhosMarvel">
+
+
+
+      <div class="imgsQuadrinhos">
+
+        <a><img src="{{quadrinhos.thumbnail.path}}/portrait_fantastic.jpg" alt=""></a>
+
+      </div>
+
+
+
+     <div class="tituloHq"><h3>{{quadrinhos.title}}</h3><br></div>
+
+     <div class="autor"><h4>{{quadrinhos.creators.items[0] ? quadrinhos.creators.items[0].name : 'Sem autor'}}</h4></div>
+
+    </div>
+
+  </div>
+
+</body>
+
+
+</html>
